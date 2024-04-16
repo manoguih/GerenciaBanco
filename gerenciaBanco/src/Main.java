@@ -52,7 +52,9 @@ public class Main {
                     cliente.depositar(valorDeposito);
                     break;
                 default:
-                    System.out.println("Opção inexistente");
+                    if(init > 3) {
+                        System.out.println("Opção inexistente");
+                    }
                     break;
             }
         }while (init !=0);
